@@ -68,12 +68,13 @@
 
         .nav{
             position: fixed;
-            left: 100%;
+            left: 0;
             top: 72px;
             bottom: 0;
-            right: -100%;
+            right: 0;
 
             background-color: rgba(176, 139, 224, 0.5);
+            transform: translateX(100%);
             transition: 0.3s;
         }
 
@@ -86,8 +87,7 @@
         }
 
         .nav.active {
-            left: 0;
-            right: 0;
+           transform: translateX(0);
         }
 
         .nav li{
